@@ -21,8 +21,8 @@ jobs:
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@3.0.0
         with:
-          ftp-server: ftp://www.haohanxingchen.cn/srv/ftp
-          ftp-username: ${{ secrets.ftp_user }}
+          ftp-server: ftp://www.haohanxingchen.cn/www/wwwroot/www.haohanxingchen.cn
+          ftp-username: ${{ secrets.ftp_user}}
           ftp-password: ${{ secrets.ftp_pwd }}
           local-dir: build/
         env:
